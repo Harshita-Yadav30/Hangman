@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="pop-up">
+        <img src="sad.gif" alt="">
+        <br>
+        <big>You Lost!</big>
+        <p id="correct-word">Correct Word: </p>
+        <button id="play">Play Again</button>
+    </div>
+    <div class="container">
+        <div class="left-div">
+            <div class="hangman">
+                <div class="rod">
+                    <div class="rope"></div>
+                    <div class="face hang"></div>
+                    <div class="main-body">
+                        <p class="left-arm hang"></p>
+                        <div class="belly-area hang"></div>
+                        <p class="right-arm hang"></p>
+                    </div>
+                    <div class="legs">
+                        <div class="left-leg hang"></div>
+                        <div class="right-leg hang"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="rod-base"></div>
+            <h3>HANGMAN GAME</h3>
+        </div>
+        <div class="right-div">
+            <button id="get-word">Get a New Word</button>
+            <div class="contents">
+                <div class="word"></div>
+                <big><b><u>HINT</u></b></big>
+                <div id="description"></div>
+                <div class="alphabets"></div>
+            </div>
+        </div>
+    </div>
+    <script src="words.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
